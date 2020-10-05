@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 
 const NavigationWraper = styled.ul`
   padding: 0;
@@ -11,11 +11,42 @@ const NavigationWraper = styled.ul`
   display: flex;
 `
 
+const NavigationItem = styled.li`
+  margin-right: 2vw;
+  position: relative;
+
+  ::after {
+    position: absolute;
+    top: 0;
+    right: -8px;
+    content: " ";
+    display: block;
+    height: 100%;
+    width: 2px;
+    background: white;
+  }
+
+  :last-child::after {
+    display: none;
+  }
+`
+
+const StyledLink = styled(Link)`
+  color: white;
+  text-decoration: none;
+`
+
 const Navigation = () => (
   <NavigationWraper>
-    <li>Terenówki</li>
-    <li>Akcesoria</li>
-    <li>Imprezy</li>
+    <NavigationItem>
+      <StyledLink to={"/Terenówki/"}>Terenówki</StyledLink>
+    </NavigationItem>
+    <NavigationItem>
+      <StyledLink to={"/Akcesoria/"}>Akcesoria</StyledLink>
+    </NavigationItem>
+    <NavigationItem>
+      <StyledLink to={"/Imprezy/"}>Imprezy</StyledLink>
+    </NavigationItem>
   </NavigationWraper>
 )
 
