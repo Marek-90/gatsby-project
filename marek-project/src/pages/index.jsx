@@ -1,9 +1,9 @@
 import React from "react"
 import styled, { createGlobalStyle } from "styled-components"
 import { Link } from "gatsby"
-import Header from "../components/Header"
-import SubHeader from "../components/SubHeader"
-import Navigation from "../components/Navigation"
+import Header from "../components/Header/Header"
+import SubHeader from "../components/SubHeader/SubHeader"
+import Navigation from "../components/Navigation/Navigation"
 import backgrodImages from "../images/jeep.jpg"
 
 const GlobalStyke = createGlobalStyle`

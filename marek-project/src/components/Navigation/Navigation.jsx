@@ -39,13 +39,13 @@ const StyledLink = styled(Link)`
 const Navigation = () => (
   <NavigationWraper>
     <NavigationItem>
-      <StyledLink to={"/Terenówki/"}>Terenówki</StyledLink>
+      <StyledLink to={"/terenowki/"}>Terenówki</StyledLink>
     </NavigationItem>
     <NavigationItem>
-      <StyledLink to={"/Akcesoria/"}>Akcesoria</StyledLink>
+      <StyledLink to={"/akcesoria/"}>Akcesoria</StyledLink>
     </NavigationItem>
     <NavigationItem>
-      <StyledLink to={"/Imprezy/"}>Imprezy</StyledLink>
+      <StyledLink to={"/imprezy/"}>Imprezy</StyledLink>
     </NavigationItem>
   </NavigationWraper>
 )
