@@ -19,14 +19,23 @@ const StyledWrapper = styled.div`
   height: 100vh;
   background-image: url(${backgrodImages});
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+const HeaderEvents = styled.h1`
+  display: block;
 `
 
 const Events = () => (
   <>
     <GlobalStyle />
+
+    <Link to={"/"}>Powrót do strony głównej</Link>
+
     <StyledWrapper>
-      <Link to={"/"}>Powrót do strony głównej</Link>
-      <h1>Informacje o imprezach</h1>
+      <HeaderEvents>Informacje o imprezach</HeaderEvents>
     </StyledWrapper>
   </>
 )
