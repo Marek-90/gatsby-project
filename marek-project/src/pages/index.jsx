@@ -1,12 +1,11 @@
 import React from "react"
 import styled, { createGlobalStyle } from "styled-components"
-import { Link } from "gatsby"
 import Header from "../components/Header/Header"
 import SubHeader from "../components/SubHeader/SubHeader"
 import Navigation from "../components/Navigation/Navigation"
 import backgrodImages from "../images/jeep.jpg"
 
-const GlobalStyke = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
 body {
   padding: 0;
   margin: 0;
@@ -29,7 +28,7 @@ const StyledWrapper = styled.div`
 
 const IndexPage = () => (
   <>
-    <GlobalStyke />
+    <GlobalStyle />
     <StyledWrapper>
       <Header>OFF-ROAD</Header>
       <SubHeader>4 x 4</SubHeader>
